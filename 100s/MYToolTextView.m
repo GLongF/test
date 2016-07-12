@@ -12,7 +12,7 @@
 #import "MYToolTextView.h"
 
 @interface MYToolTextView ()
-@property(nonatomic,strong) UITextField *draftTextField;
+
 @property(nonatomic,strong) UIButton *sendButton;
 @end
 

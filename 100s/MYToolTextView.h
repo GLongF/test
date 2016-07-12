@@ -12,6 +12,7 @@
 typedef void (^ButtonClicked)(NSString * draftText);
 @interface MYToolTextView : UIView
 
+@property(nonatomic,strong) UITextField *draftTextField;
 @property (nonatomic,copy) ButtonClicked buttonClicked;
 
 @end
