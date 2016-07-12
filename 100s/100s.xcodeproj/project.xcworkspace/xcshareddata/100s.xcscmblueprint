@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "492BABDC5975966CC732CDADD327DAF6C88F83AF" : 0,
+    "48AD47104DC4E8DA794F18D84C4604399F919EAF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5D040715-B99A-470C-AD27-2F6F38191119",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "492BABDC5975966CC732CDADD327DAF6C88F83AF" : "100s%E5%89%AF%E6%9C%AC\/",
+    "48AD47104DC4E8DA794F18D84C4604399F919EAF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "100s",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "100s\/100s.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GLongF\/100S.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48AD47104DC4E8DA794F18D84C4604399F919EAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GLongF\/100s.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "492BABDC5975966CC732CDADD327DAF6C88F83AF"
+    }
+  ]
+}
