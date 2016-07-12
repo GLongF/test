@@ -8,6 +8,7 @@
 
 #import "MYDetailPlayViewController.h"
 #import "MYDetailPlayView.h"
+#import "MYChatController.h"
 @interface MYDetailPlayViewController ()
 @property (nonatomic,strong) MYDetailPlayView *detailView;
 @end
@@ -24,6 +25,13 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关注" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarbuttonAction:)];
+    
+    __weak typeof(self) weakSelf = self;
+    self.detailView.messageButtton.block = ^(MYButton *btn) {
+        
+        MYChatController *chatController = [[MYChatController alloc] init];
+        [weakSelf.navigationController pushViewController:chatController animated:YES];
+        };
 }
 
 // rightBarButtonItem

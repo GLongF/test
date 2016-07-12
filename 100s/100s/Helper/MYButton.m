@@ -12,7 +12,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchDragInside];
+        [self addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
         
     }
     return self;

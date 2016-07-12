@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6E63CA1D348A02008ED2DF /* MYChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E63C91D348A02008ED2DF /* MYChatController.m */; };
+		6F6E63CF1D349D18008ED2DF /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E63CE1D349D18008ED2DF /* back@2x.png */; };
 		6FCC4DF61D322362000FB2C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4DF51D322362000FB2C3 /* main.m */; };
 		6FCC4DF91D322362000FB2C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4DF81D322362000FB2C3 /* AppDelegate.m */; };
 		6FCC4DFC1D322362000FB2C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4DFB1D322362000FB2C3 /* ViewController.m */; };
@@ -23,7 +25,6 @@
 		6FCC4E391D3233B2000FB2C3 /* voice.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E381D3233B2000FB2C3 /* voice.png */; };
 		6FCC4E461D324964000FB2C3 /* MYHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */; };
 		6FCC4E491D32498D000FB2C3 /* MYDetailPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */; };
-		6FCC4E4B1D3261C7000FB2C3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E4A1D3261C7000FB2C3 /* 1.png */; };
 		6FCC4E4D1D3261D2000FB2C3 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E4C1D3261D2000FB2C3 /* 2.png */; };
 		6FE21F221D333CF300B0BB5D /* MYDetailPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */; };
 		6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21FC01D33954000B0BB5D /* MYButton.m */; };
@@ -47,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F6E63C81D348A02008ED2DF /* MYChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChatController.h; sourceTree = "<group>"; };
+		6F6E63C91D348A02008ED2DF /* MYChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChatController.m; sourceTree = "<group>"; };
+		6F6E63CE1D349D18008ED2DF /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		6FCC4DF11D322361000FB2C3 /* 100s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC4DF51D322362000FB2C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FCC4DF71D322362000FB2C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,7 +82,6 @@
 		6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotTableViewCell.m; sourceTree = "<group>"; };
 		6FCC4E471D32498D000FB2C3 /* MYDetailPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayViewController.h; sourceTree = "<group>"; };
 		6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayViewController.m; sourceTree = "<group>"; };
-		6FCC4E4A1D3261C7000FB2C3 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		6FCC4E4C1D3261D2000FB2C3 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		6FE21F201D333CF300B0BB5D /* MYDetailPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayView.h; sourceTree = "<group>"; };
 		6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayView.m; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */,
 				6FCC4E471D32498D000FB2C3 /* MYDetailPlayViewController.h */,
 				6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */,
+				6F6E63C81D348A02008ED2DF /* MYChatController.h */,
+				6F6E63C91D348A02008ED2DF /* MYChatController.m */,
 				6FE21F201D333CF300B0BB5D /* MYDetailPlayView.h */,
 				6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */,
 			);
@@ -204,8 +209,8 @@
 		6FCC4E3B1D3236E5000FB2C3 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				6F6E63CE1D349D18008ED2DF /* back@2x.png */,
 				6FCC4E381D3233B2000FB2C3 /* voice.png */,
-				6FCC4E4A1D3261C7000FB2C3 /* 1.png */,
 				6FCC4E4C1D3261D2000FB2C3 /* 2.png */,
 			);
 			name = resource;
@@ -338,7 +343,7 @@
 				6FCC4E391D3233B2000FB2C3 /* voice.png in Resources */,
 				6FCC4E011D322362000FB2C3 /* Assets.xcassets in Resources */,
 				6FCC4DFF1D322362000FB2C3 /* Main.storyboard in Resources */,
-				6FCC4E4B1D3261C7000FB2C3 /* 1.png in Resources */,
+				6F6E63CF1D349D18008ED2DF /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +380,7 @@
 				6FCC4E2C1D3228FE000FB2C3 /* MYMainViewController.m in Sources */,
 				6FCC4E351D322A11000FB2C3 /* MYTabBar.m in Sources */,
 				6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */,
+				6F6E63CA1D348A02008ED2DF /* MYChatController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

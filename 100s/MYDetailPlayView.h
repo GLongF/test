@@ -12,14 +12,14 @@
 /** 播放背景 */
 @property(nonatomic,strong) UIImageView *playerBackImage;
 /** 点赞按钮 */
-@property(nonatomic,strong) UIButton * praiseButton;
+@property(nonatomic,strong) MYButton * praiseButton;
 /** 私信按钮 */
-@property(nonatomic,strong) UIButton * messageButtton;
+@property(nonatomic,strong) MYButton * messageButtton;
 /** 礼物按钮 */
-@property(nonatomic,strong) UIButton * giftButton;
+@property(nonatomic,strong) MYButton * giftButton;
 /** 播放次数 */
-@property(nonatomic,strong) UIButton * playTimesButton;
+@property(nonatomic,strong) MYButton * playTimesButton;
 /** 分享次数 */
-@property(nonatomic,strong) UIButton * shareTimesbuttton;
+@property(nonatomic,strong) MYButton * shareTimesbuttton;
 
 @end
