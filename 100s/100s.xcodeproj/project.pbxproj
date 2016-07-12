@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F6E63CA1D348A02008ED2DF /* MYChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E63C91D348A02008ED2DF /* MYChatController.m */; };
 		6F6E63CF1D349D18008ED2DF /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E63CE1D349D18008ED2DF /* back@2x.png */; };
+		6F6E63D21D34C48D008ED2DF /* MYToolTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */; };
 		6FCC4DF61D322362000FB2C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4DF51D322362000FB2C3 /* main.m */; };
 		6FCC4DF91D322362000FB2C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4DF81D322362000FB2C3 /* AppDelegate.m */; };
 		6FCC4DFC1D322362000FB2C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4DFB1D322362000FB2C3 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 		6F6E63C81D348A02008ED2DF /* MYChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChatController.h; sourceTree = "<group>"; };
 		6F6E63C91D348A02008ED2DF /* MYChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChatController.m; sourceTree = "<group>"; };
 		6F6E63CE1D349D18008ED2DF /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		6F6E63D01D34C48D008ED2DF /* MYToolTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYToolTextView.h; path = ../MYToolTextView.h; sourceTree = "<group>"; };
+		6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYToolTextView.m; path = ../MYToolTextView.m; sourceTree = "<group>"; };
 		6FCC4DF11D322361000FB2C3 /* 100s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCC4DF51D322362000FB2C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FCC4DF71D322362000FB2C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				6FCC4DFB1D322362000FB2C3 /* ViewController.m */,
 				6FE21FBF1D33954000B0BB5D /* MYButton.h */,
 				6FE21FC01D33954000B0BB5D /* MYButton.m */,
+				6F6E63D01D34C48D008ED2DF /* MYToolTextView.h */,
+				6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */,
 				6FCC4DFD1D322362000FB2C3 /* Main.storyboard */,
 				6FCC4E001D322362000FB2C3 /* Assets.xcassets */,
 				6FCC4E021D322362000FB2C3 /* LaunchScreen.storyboard */,
@@ -377,6 +382,7 @@
 				6FCC4E461D324964000FB2C3 /* MYHotTableViewCell.m in Sources */,
 				6FCC4E321D322963000FB2C3 /* MYMeViewController.m in Sources */,
 				6FCC4E491D32498D000FB2C3 /* MYDetailPlayViewController.m in Sources */,
+				6F6E63D21D34C48D008ED2DF /* MYToolTextView.m in Sources */,
 				6FCC4E2C1D3228FE000FB2C3 /* MYMainViewController.m in Sources */,
 				6FCC4E351D322A11000FB2C3 /* MYTabBar.m in Sources */,
 				6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */,

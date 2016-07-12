@@ -7,6 +7,7 @@
 //
 
 #import "MYChatController.h"
+#import "MYToolTextView.h"
 
 @interface MYChatController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -22,6 +23,10 @@
     [super viewDidLoad];
     self.conversations = [NSMutableArray new];
     [self setupTableView];
+    MYToolTextView *tool = [[MYToolTextView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 44, self.view.frame.size.width, 44)];
+    tool.backgroundColor = [UIColor redColor];
+    [self.view addSubview:tool];
+    
 }
 
 - (void)setupTableView {
