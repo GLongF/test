@@ -15,7 +15,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     
-    //得到当前上下文
+    //得到当前上下文  
     CGContextRef ctx=UIGraphicsGetCurrentContext();
     CGFloat height = self.bounds.size.height;
     [[UIColor redColor] setFill];
