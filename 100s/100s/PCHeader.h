@@ -11,4 +11,11 @@
 
 #import "MYButton.h"
 
+#define WeakSelf(s) __weak typeof(s) weak##s = s
+#define StrongSelf(s) __strong typeof(s) s = weak##s
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
 #endif /* PCHeader_h */

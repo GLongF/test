@@ -27,6 +27,7 @@
 		6FCC4E461D324964000FB2C3 /* MYHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */; };
 		6FCC4E491D32498D000FB2C3 /* MYDetailPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */; };
 		6FCC4E4D1D3261D2000FB2C3 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E4C1D3261D2000FB2C3 /* 2.png */; };
+		6FCCF5B81D35D4BE00685308 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCF5B71D35D4BE00685308 /* WaveView.m */; };
 		6FE21F221D333CF300B0BB5D /* MYDetailPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */; };
 		6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21FC01D33954000B0BB5D /* MYButton.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		6FCC4E471D32498D000FB2C3 /* MYDetailPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayViewController.h; sourceTree = "<group>"; };
 		6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayViewController.m; sourceTree = "<group>"; };
 		6FCC4E4C1D3261D2000FB2C3 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		6FCCF5B61D35D4BE00685308 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		6FCCF5B71D35D4BE00685308 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 		6FE21F201D333CF300B0BB5D /* MYDetailPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayView.h; sourceTree = "<group>"; };
 		6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayView.m; sourceTree = "<group>"; };
 		6FE21FBF1D33954000B0BB5D /* MYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYButton.h; path = Helper/MYButton.h; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 			children = (
 				6FCC4E2D1D322931000FB2C3 /* MYVoiceViewController.h */,
 				6FCC4E2E1D322931000FB2C3 /* MYVoiceViewController.m */,
+				6FCCF5B61D35D4BE00685308 /* WaveView.h */,
+				6FCCF5B71D35D4BE00685308 /* WaveView.m */,
 			);
 			name = voiceVC;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				6FCC4E491D32498D000FB2C3 /* MYDetailPlayViewController.m in Sources */,
 				6F6E63D21D34C48D008ED2DF /* MYToolTextView.m in Sources */,
 				6FCC4E2C1D3228FE000FB2C3 /* MYMainViewController.m in Sources */,
+				6FCCF5B81D35D4BE00685308 /* WaveView.m in Sources */,
 				6FCC4E351D322A11000FB2C3 /* MYTabBar.m in Sources */,
 				6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */,
 				6F6E63CA1D348A02008ED2DF /* MYChatController.m in Sources */,
