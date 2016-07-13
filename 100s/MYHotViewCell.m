@@ -1,20 +1,20 @@
 //
-//  MYHotTableViewCell.m
+//  MYHotViewCell.m
 //  100s
 //
-//  Created by 郭龙飞 on 16/7/10.
+//  Created by 郭龙飞 on 16/7/13.
 //  Copyright © 2016年 郭龙飞. All rights reserved.
 //
 
-#import "MYHotTableViewCell.h"
+#import "MYHotViewCell.h"
 
-@interface MYHotTableViewCell()
+@interface MYHotViewCell()
 /** photoImage */
 @property (nonatomic, strong) UIImageView *photoImage;
 
 @end
 
-@implementation MYHotTableViewCell
+@implementation MYHotViewCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setUpView];

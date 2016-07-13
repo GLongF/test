@@ -8,24 +8,36 @@
 
 #import "MYMainViewController.h"
 #import "MYDetailPlayViewController.h"
-#import "MYHotTableViewCell.h"
+#import "MYHotViewCell.h"
 
 @interface MYMainViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong) UIScrollView *scrollView;
+
+/** 热门页面 */
 @property(nonatomic,strong) UITableView *hotTableView;
 /** 热门数据 */
 @property(nonatomic,strong) NSMutableArray *hotDataArray;
+
 @end
 
 @implementation MYMainViewController
 
+- (void)loadView {
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, -64, SCREEN_WIDTH * 4, SCREEN_HEIGHT)];
+    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * 4, 0);
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.bounces = NO;
+    self.scrollView.pagingEnabled = YES;
+    self.view = self.scrollView;
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     // 热门页面
     [self putHotTableView];
-   
+    [self putNewView];
 }
 
 
@@ -35,10 +47,10 @@
 - (void)putHotTableView {
 
     self.hotTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 44) style:UITableViewStylePlain];
-    [self.view addSubview:self.hotTableView];
+    [self.scrollView addSubview:self.hotTableView];
     self.hotTableView.delegate = self;
     self.hotTableView.dataSource = self; 
-    [self.hotTableView registerClass:[MYHotTableViewCell class] forCellReuseIdentifier:@"hotTableViewCell"];
+    [self.hotTableView registerClass:[MYHotViewCell class] forCellReuseIdentifier:@"hotTableViewCell"];
     
     // 初始化数据源
     self.hotDataArray = @[@"你好",@"我好",@"大家好"].mutableCopy;
@@ -54,7 +66,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MYHotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hotTableViewCell" forIndexPath:indexPath];
+    MYHotViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hotTableViewCell" forIndexPath:indexPath];
     cell.voiceDetailLabel.text = self.hotDataArray[indexPath.row];
     return cell;
     
@@ -65,6 +77,19 @@
     [detailPlayVC setHidesBottomBarWhenPushed:YES];
     [self.navigationController pushViewController:detailPlayVC animated:YES];
 }
+
+#pragma mark -  - - - -- - -- newView
+- (void)putNewView {
+   
+    
+}
+
+#pragma mark -  - - - -- - -- starView
+
+
+
+#pragma mark -  - - - -- - -- foucsView
+
 
 
 

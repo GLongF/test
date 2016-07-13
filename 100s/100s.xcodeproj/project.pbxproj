@@ -24,12 +24,12 @@
 		6FCC4E321D322963000FB2C3 /* MYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E311D322963000FB2C3 /* MYMeViewController.m */; };
 		6FCC4E351D322A11000FB2C3 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E341D322A11000FB2C3 /* MYTabBar.m */; };
 		6FCC4E391D3233B2000FB2C3 /* voice.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E381D3233B2000FB2C3 /* voice.png */; };
-		6FCC4E461D324964000FB2C3 /* MYHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */; };
 		6FCC4E491D32498D000FB2C3 /* MYDetailPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */; };
 		6FCC4E4D1D3261D2000FB2C3 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E4C1D3261D2000FB2C3 /* 2.png */; };
 		6FCCF5B81D35D4BE00685308 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCF5B71D35D4BE00685308 /* WaveView.m */; };
 		6FCCF5BF1D35E76B00685308 /* MYChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCF5BE1D35E76B00685308 /* MYChatCell.m */; };
 		6FCCF5C71D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCF5C61D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 */; };
+		6FCCF5D81D364D3500685308 /* MYHotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCF5D71D364D3500685308 /* MYHotViewCell.m */; };
 		6FE21F221D333CF300B0BB5D /* MYDetailPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */; };
 		6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21FC01D33954000B0BB5D /* MYButton.m */; };
 /* End PBXBuildFile section */
@@ -84,8 +84,6 @@
 		6FCC4E331D322A11000FB2C3 /* MYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBar.h; sourceTree = "<group>"; };
 		6FCC4E341D322A11000FB2C3 /* MYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBar.m; sourceTree = "<group>"; };
 		6FCC4E381D3233B2000FB2C3 /* voice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voice.png; sourceTree = "<group>"; };
-		6FCC4E441D324964000FB2C3 /* MYHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotTableViewCell.h; sourceTree = "<group>"; };
-		6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotTableViewCell.m; sourceTree = "<group>"; };
 		6FCC4E471D32498D000FB2C3 /* MYDetailPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayViewController.h; sourceTree = "<group>"; };
 		6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayViewController.m; sourceTree = "<group>"; };
 		6FCC4E4C1D3261D2000FB2C3 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -94,6 +92,8 @@
 		6FCCF5BD1D35E76B00685308 /* MYChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChatCell.h; sourceTree = "<group>"; };
 		6FCCF5BE1D35E76B00685308 /* MYChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChatCell.m; sourceTree = "<group>"; };
 		6FCCF5C61D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ronald Jenkees-Super-Fun.mp3"; sourceTree = "<group>"; };
+		6FCCF5D61D364D3500685308 /* MYHotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHotViewCell.h; sourceTree = "<group>"; };
+		6FCCF5D71D364D3500685308 /* MYHotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHotViewCell.m; sourceTree = "<group>"; };
 		6FE21F201D333CF300B0BB5D /* MYDetailPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayView.h; sourceTree = "<group>"; };
 		6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayView.m; sourceTree = "<group>"; };
 		6FE21FBF1D33954000B0BB5D /* MYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYButton.h; path = Helper/MYButton.h; sourceTree = "<group>"; };
@@ -204,12 +204,14 @@
 			children = (
 				6FCC4E2A1D3228FE000FB2C3 /* MYMainViewController.h */,
 				6FCC4E2B1D3228FE000FB2C3 /* MYMainViewController.m */,
-				6FCC4E441D324964000FB2C3 /* MYHotTableViewCell.h */,
-				6FCC4E451D324964000FB2C3 /* MYHotTableViewCell.m */,
 				6FCC4E471D32498D000FB2C3 /* MYDetailPlayViewController.h */,
 				6FCC4E481D32498D000FB2C3 /* MYDetailPlayViewController.m */,
-				6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */,
 				6FE21F201D333CF300B0BB5D /* MYDetailPlayView.h */,
+				6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */,
+				6FCCF5C81D36449A00685308 /* hotController */,
+				6FCCF5C91D3644E300685308 /* newController */,
+				6FCCF5CB1D36451C00685308 /* starController */,
+				6FCCF5CC1D36457700685308 /* focusController */,
 				6FCCF5B91D35D9FB00685308 /* chatController */,
 			);
 			name = mainVC;
@@ -259,6 +261,36 @@
 				6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */,
 			);
 			name = chatController;
+			sourceTree = "<group>";
+		};
+		6FCCF5C81D36449A00685308 /* hotController */ = {
+			isa = PBXGroup;
+			children = (
+				6FCCF5D61D364D3500685308 /* MYHotViewCell.h */,
+				6FCCF5D71D364D3500685308 /* MYHotViewCell.m */,
+			);
+			name = hotController;
+			sourceTree = "<group>";
+		};
+		6FCCF5C91D3644E300685308 /* newController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = newController;
+			sourceTree = "<group>";
+		};
+		6FCCF5CB1D36451C00685308 /* starController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = starController;
+			sourceTree = "<group>";
+		};
+		6FCCF5CC1D36457700685308 /* focusController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = focusController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,7 +433,7 @@
 				6FCC4DF91D322362000FB2C3 /* AppDelegate.m in Sources */,
 				6FCC4E2F1D322931000FB2C3 /* MYVoiceViewController.m in Sources */,
 				6FCC4DF61D322362000FB2C3 /* main.m in Sources */,
-				6FCC4E461D324964000FB2C3 /* MYHotTableViewCell.m in Sources */,
+				6FCCF5D81D364D3500685308 /* MYHotViewCell.m in Sources */,
 				6FCC4E321D322963000FB2C3 /* MYMeViewController.m in Sources */,
 				6FCC4E491D32498D000FB2C3 /* MYDetailPlayViewController.m in Sources */,
 				6F6E63D21D34C48D008ED2DF /* MYToolTextView.m in Sources */,

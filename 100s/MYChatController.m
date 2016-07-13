@@ -47,9 +47,15 @@
     //[noti.userInfo(UIKeyboardFrameEndUserInfoKey) CGRect]
    CGRect keyboardFrame = [noti.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     if (keyboardFrame.origin.y < SCREEN_HEIGHT) {
-        self.view.frame = CGRectMake(0, - keyboardFrame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT);
+        [UIView animateWithDuration:2 animations:^{
+             self.view.frame = CGRectMake(0, - keyboardFrame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT);
+        }];
+       
     }else {
-        self.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        
+        [UIView animateWithDuration:2 animations:^{
+            self.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        }];
     }
     
 }
