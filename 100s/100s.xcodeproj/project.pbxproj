@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04D426251D35DE4000829195 /* Ronald Jenkees-Super-Fun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04D426241D35DE4000829195 /* Ronald Jenkees-Super-Fun.mp3 */; };
 		6F6E63CA1D348A02008ED2DF /* MYChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E63C91D348A02008ED2DF /* MYChatController.m */; };
 		6F6E63CF1D349D18008ED2DF /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F6E63CE1D349D18008ED2DF /* back@2x.png */; };
 		6F6E63D21D34C48D008ED2DF /* MYToolTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */; };
@@ -30,6 +29,7 @@
 		6FCC4E4D1D3261D2000FB2C3 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FCC4E4C1D3261D2000FB2C3 /* 2.png */; };
 		6FCCF5B81D35D4BE00685308 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCF5B71D35D4BE00685308 /* WaveView.m */; };
 		6FCCF5BF1D35E76B00685308 /* MYChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCCF5BE1D35E76B00685308 /* MYChatCell.m */; };
+		6FCCF5C71D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FCCF5C61D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 */; };
 		6FE21F221D333CF300B0BB5D /* MYDetailPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */; };
 		6FE21FC11D33954000B0BB5D /* MYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE21FC01D33954000B0BB5D /* MYButton.m */; };
 /* End PBXBuildFile section */
@@ -52,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04D426241D35DE4000829195 /* Ronald Jenkees-Super-Fun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ronald Jenkees-Super-Fun.mp3"; sourceTree = "<group>"; };
 		6F6E63C81D348A02008ED2DF /* MYChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChatController.h; sourceTree = "<group>"; };
 		6F6E63C91D348A02008ED2DF /* MYChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChatController.m; sourceTree = "<group>"; };
 		6F6E63CE1D349D18008ED2DF /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		6FCCF5B71D35D4BE00685308 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 		6FCCF5BD1D35E76B00685308 /* MYChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChatCell.h; sourceTree = "<group>"; };
 		6FCCF5BE1D35E76B00685308 /* MYChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChatCell.m; sourceTree = "<group>"; };
+		6FCCF5C61D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ronald Jenkees-Super-Fun.mp3"; sourceTree = "<group>"; };
 		6FE21F201D333CF300B0BB5D /* MYDetailPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDetailPlayView.h; sourceTree = "<group>"; };
 		6FE21F211D333CF300B0BB5D /* MYDetailPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDetailPlayView.m; sourceTree = "<group>"; };
 		6FE21FBF1D33954000B0BB5D /* MYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYButton.h; path = Helper/MYButton.h; sourceTree = "<group>"; };
@@ -219,8 +219,8 @@
 		6FCC4E3B1D3236E5000FB2C3 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				04D426241D35DE4000829195 /* Ronald Jenkees-Super-Fun.mp3 */,
 				6F6E63CE1D349D18008ED2DF /* back@2x.png */,
+				6FCCF5C61D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 */,
 				6FCC4E381D3233B2000FB2C3 /* voice.png */,
 				6FCC4E4C1D3261D2000FB2C3 /* 2.png */,
 			);
@@ -369,7 +369,7 @@
 				6FCC4E391D3233B2000FB2C3 /* voice.png in Resources */,
 				6FCC4E011D322362000FB2C3 /* Assets.xcassets in Resources */,
 				6FCC4DFF1D322362000FB2C3 /* Main.storyboard in Resources */,
-				04D426251D35DE4000829195 /* Ronald Jenkees-Super-Fun.mp3 in Resources */,
+				6FCCF5C71D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 in Resources */,
 				6F6E63CF1D349D18008ED2DF /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
