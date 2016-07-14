@@ -9,8 +9,8 @@
 #import "MYHotController.h"
 #import "MYDetailPlayViewController.h"
 #import "MYHotViewCell.h"
-@interface MYHotController ()<UITableViewDelegate,UITableViewDataSource>
 
+@interface MYHotController ()<UITableViewDelegate,UITableViewDataSource>
 /** 热门页面 */
 @property(nonatomic,strong) UITableView *hotTableView;
 /** 热门数据 */
