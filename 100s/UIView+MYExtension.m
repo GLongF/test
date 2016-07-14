@@ -16,6 +16,42 @@
     frame.size = size;
     self.frame = frame;
 }
+// 左边界
+- (void)setLeft:(CGFloat)newleft {
+    CGRect newframe = self.frame;
+    newframe.origin.x = newleft;
+    self.frame = newframe;
+}
+- (CGFloat)left {
+    return self.frame.origin.x;
+}
+// 右边界
+- (void)setRight:(CGFloat)newright {
+    CGRect newframe = self.frame;
+    newframe.origin.x = newright - newframe.size.width;
+    self.frame = newframe;
+}
+- (CGFloat)right {
+    return self.frame.origin.x + self.frame.size.width;
+}
+// 上边界
+- (void)setTop:(CGFloat)newtop {
+    CGRect newframe = self.frame;
+    newframe.origin.y = newtop;
+    self.frame = newframe;
+}
+- (CGFloat)top{
+    return self.frame.origin.y;
+}
+// 下边界
+- (void)setBottom:(CGFloat)newbottom {
+    CGRect newframe = self.frame;
+    newframe.origin.y = newbottom - newframe.size.height;
+    self.frame = newframe;
+}
+- (CGFloat)bottom {
+    return self.frame.origin.y + self.frame.size.height;
+}
 
 - (CGSize)size
 {

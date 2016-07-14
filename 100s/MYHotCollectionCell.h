@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface MYHotCollectionCell : UICollectionViewCell
+/** 名字 */
+@property (nonatomic, strong) UILabel *nameLabel;
+/** 头像 */
+@property (nonatomic, strong) UIImageView *photoImage;
+/** 背景图片 */
+@property (nonatomic, strong) UIImageView *coverImage;
 
 @end

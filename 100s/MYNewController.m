@@ -7,16 +7,49 @@
 //
 
 #import "MYNewController.h"
+#import "MYHotCollectionCell.h"
 
-@interface MYNewController ()
-
+@interface MYNewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSMutableArray *listArray;
 @end
 
 @implementation MYNewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    self.listArray = @[@"唐僧",@"悟空",@"八戒",@"沙僧",@"如来",@"观音"].mutableCopy;
+    [self setupCollectionView];
+    
+}
+- (void)setupCollectionView {
+        
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.minimumInteritemSpacing = 5;
+    layout.minimumLineSpacing = 5;
+    layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
+    layout.itemSize = CGSizeMake((SCREEN_WIDTH - 30) / 2, (SCREEN_WIDTH - 30) / 2 + 45);
+        
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) collectionViewLayout:layout];
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_collectionView];
+    // 注册单元
+    [_collectionView registerClass:[MYHotCollectionCell class] forCellWithReuseIdentifier:@"MYHotCollectionCell"];
+    
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.listArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    MYHotCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MYHotCollectionCell" forIndexPath:indexPath];
+        
+    cell.nameLabel.text = self.listArray[indexPath.row];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
