@@ -12,6 +12,9 @@
 		6F6E63D21D34C48D008ED2DF /* MYToolTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */; };
 		6F7DCCC91D387E5700A95B1C /* MYMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DCCC81D387E5700A95B1C /* MYMeCell.m */; };
 		6F7DCCCC1D388FD300A95B1C /* MYMeheaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DCCCB1D388FD300A95B1C /* MYMeheaderView.m */; };
+		6F7DCCCF1D38B86700A95B1C /* MYConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DCCCE1D38B86700A95B1C /* MYConversationController.m */; };
+		6F7DCCD21D38B93C00A95B1C /* MYEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DCCD11D38B93C00A95B1C /* MYEditController.m */; };
+		6F7DCCD71D38BCAD00A95B1C /* 2-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F7DCCD61D38BCAD00A95B1C /* 2-02.png */; };
 		6FC61A041D3736AA00ACCAB7 /* UIView+MYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC61A031D3736AA00ACCAB7 /* UIView+MYExtension.m */; };
 		6FC61A071D37394400ACCAB7 /* MYNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC61A061D37394400ACCAB7 /* MYNewController.m */; };
 		6FC61A0A1D37395F00ACCAB7 /* MYFouceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC61A091D37395F00ACCAB7 /* MYFouceController.m */; };
@@ -68,6 +71,11 @@
 		6F7DCCC81D387E5700A95B1C /* MYMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMeCell.m; sourceTree = "<group>"; };
 		6F7DCCCA1D388FD300A95B1C /* MYMeheaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMeheaderView.h; sourceTree = "<group>"; };
 		6F7DCCCB1D388FD300A95B1C /* MYMeheaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMeheaderView.m; sourceTree = "<group>"; };
+		6F7DCCCD1D38B86700A95B1C /* MYConversationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYConversationController.h; sourceTree = "<group>"; };
+		6F7DCCCE1D38B86700A95B1C /* MYConversationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYConversationController.m; sourceTree = "<group>"; };
+		6F7DCCD01D38B93C00A95B1C /* MYEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEditController.h; sourceTree = "<group>"; };
+		6F7DCCD11D38B93C00A95B1C /* MYEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEditController.m; sourceTree = "<group>"; };
+		6F7DCCD61D38BCAD00A95B1C /* 2-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-02.png"; sourceTree = "<group>"; };
 		6FC61A021D3736AA00ACCAB7 /* UIView+MYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MYExtension.h"; sourceTree = "<group>"; };
 		6FC61A031D3736AA00ACCAB7 /* UIView+MYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MYExtension.m"; sourceTree = "<group>"; };
 		6FC61A051D37394400ACCAB7 /* MYNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNewController.h; sourceTree = "<group>"; };
@@ -252,6 +260,7 @@
 		6FCC4E3B1D3236E5000FB2C3 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				6F7DCCD61D38BCAD00A95B1C /* 2-02.png */,
 				6F6E63CE1D349D18008ED2DF /* back@2x.png */,
 				6FCCF5C61D3606EF00685308 /* Ronald Jenkees-Super-Fun.mp3 */,
 				6FCC4E381D3233B2000FB2C3 /* voice.png */,
@@ -277,6 +286,8 @@
 			children = (
 				6FCC4E301D322963000FB2C3 /* MYMeViewController.h */,
 				6FCC4E311D322963000FB2C3 /* MYMeViewController.m */,
+				6F7DCCD01D38B93C00A95B1C /* MYEditController.h */,
+				6F7DCCD11D38B93C00A95B1C /* MYEditController.m */,
 				6F7DCCCA1D388FD300A95B1C /* MYMeheaderView.h */,
 				6F7DCCCB1D388FD300A95B1C /* MYMeheaderView.m */,
 				6F7DCCC71D387E5700A95B1C /* MYMeCell.h */,
@@ -294,6 +305,8 @@
 				6FCCF5BE1D35E76B00685308 /* MYChatCell.m */,
 				6F6E63D01D34C48D008ED2DF /* MYToolTextView.h */,
 				6F6E63D11D34C48D008ED2DF /* MYToolTextView.m */,
+				6F7DCCCD1D38B86700A95B1C /* MYConversationController.h */,
+				6F7DCCCE1D38B86700A95B1C /* MYConversationController.m */,
 			);
 			name = chatController;
 			sourceTree = "<group>";
@@ -433,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FCC4E4D1D3261D2000FB2C3 /* 2.png in Resources */,
+				6F7DCCD71D38BCAD00A95B1C /* 2-02.png in Resources */,
 				6FCC4E041D322362000FB2C3 /* LaunchScreen.storyboard in Resources */,
 				6FCC4E391D3233B2000FB2C3 /* voice.png in Resources */,
 				6FCC4E011D322362000FB2C3 /* Assets.xcassets in Resources */,
@@ -465,6 +479,7 @@
 			files = (
 				6FE21F221D333CF300B0BB5D /* MYDetailPlayView.m in Sources */,
 				6FC61A041D3736AA00ACCAB7 /* UIView+MYExtension.m in Sources */,
+				6F7DCCCF1D38B86700A95B1C /* MYConversationController.m in Sources */,
 				6FC61A0A1D37395F00ACCAB7 /* MYFouceController.m in Sources */,
 				6FC61A101D37488700ACCAB7 /* MYHotCollectionCell.m in Sources */,
 				6FCC4E291D322815000FB2C3 /* MYTabBarViewController.m in Sources */,
@@ -472,6 +487,7 @@
 				6FCC4DFC1D322362000FB2C3 /* ViewController.m in Sources */,
 				6FCC4DF91D322362000FB2C3 /* AppDelegate.m in Sources */,
 				6FCC4E2F1D322931000FB2C3 /* MYVoiceViewController.m in Sources */,
+				6F7DCCD21D38B93C00A95B1C /* MYEditController.m in Sources */,
 				6FCC4DF61D322362000FB2C3 /* main.m in Sources */,
 				6FCCF5D81D364D3500685308 /* MYHotViewCell.m in Sources */,
 				6FCC4E321D322963000FB2C3 /* MYMeViewController.m in Sources */,

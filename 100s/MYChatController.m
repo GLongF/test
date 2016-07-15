@@ -10,6 +10,7 @@
 #import "MYToolTextView.h"
 #import "MYChatCell.h"
 
+
 @interface MYChatController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)UITableView *chatView;

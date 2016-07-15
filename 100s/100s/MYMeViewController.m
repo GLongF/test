@@ -9,6 +9,8 @@
 #import "MYMeViewController.h"
 #import "MYMeCell.h"
 #import "MYMeheaderView.h"
+#import "MYConversationController.h"
+#import "MYEditController.h"
 
 @interface MYMeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -30,15 +32,21 @@
     
     // 数据源
     self.tableDataArry = @[@"我的声音",@"意见反馈"].mutableCopy;
-    
+
+
+
 }
 // 左button
 - (void)leftAction:(UIBarButtonItem *)sender {
-    
+    MYConversationController *conversation = [[MYConversationController alloc] init];
+    conversation.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:conversation animated:YES];
 }
 // 右button
 - (void)rightAction:(UIBarButtonItem *)sender {
-    
+    MYEditController *edit = [[MYEditController alloc] init];
+    edit.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:edit animated:YES];
 }
 #pragma mark -- tableView
 

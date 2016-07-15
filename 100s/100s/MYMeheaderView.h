@@ -11,4 +11,5 @@
 @interface MYMeheaderView : UIView
 @property(nonatomic,strong) UIImageView *photoImage;
 @property(nonatomic,strong) UILabel *nameLable;
+@property(nonatomic,strong) UILabel *lable;
 @end
