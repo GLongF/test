@@ -40,7 +40,7 @@
 }
 - (void)layoutSubviews {
     [super layoutSubviews];
-    CGSize nameSize = [_nameLabel.text sizeWithAttributes:@{NSFontAttributeName:_nameLabel.font}];
+    //CGSize nameSize = [_nameLabel.text sizeWithAttributes:@{NSFontAttributeName:_nameLabel.font}];
     //_nameLabel.frame = CGRectMake(0, SCREEN_HEIGHT - 20, nameSize.width, 20);
     
 }

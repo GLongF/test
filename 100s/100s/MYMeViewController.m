@@ -7,16 +7,64 @@
 //
 
 #import "MYMeViewController.h"
+#import "MYMeCell.h"
+#import "MYMeheaderView.h"
 
-@interface MYMeViewController ()
-
+@interface MYMeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *tableDataArry;
 @end
 
 @implementation MYMeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"我的100s";
+    // 左button
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"私信" style:UIBarButtonItemStyleDone target:self action:@selector(leftAction:)];
+    // 右button
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(rightAction:)];
+    
+    // 初始化tableView
+    [self setupTableView];
+    
+    // 数据源
+    self.tableDataArry = @[@"我的声音",@"意见反馈"].mutableCopy;
+    
+}
+// 左button
+- (void)leftAction:(UIBarButtonItem *)sender {
+    
+}
+// 右button
+- (void)rightAction:(UIBarButtonItem *)sender {
+    
+}
+#pragma mark -- tableView
 
+- (void)setupTableView {
+    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource =self;
+    [self.tableView registerClass:[MYMeCell class] forCellReuseIdentifier:@"cell"];
+    [self.view addSubview:self.tableView];
+    
+    MYMeheaderView *headerView = [[MYMeheaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT * 0.3)];
+    self.tableView.tableHeaderView = headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.tableDataArry.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    MYMeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.lable.text = self.tableDataArry[indexPath.row];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

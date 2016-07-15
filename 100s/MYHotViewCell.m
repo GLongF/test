@@ -15,6 +15,7 @@
 @end
 
 @implementation MYHotViewCell
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setUpView];
