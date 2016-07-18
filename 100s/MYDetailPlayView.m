@@ -7,7 +7,9 @@
 //
 
 #import "MYDetailPlayView.h"
-
+#define PLAYERBACK_WIDTH 300
+#define PLAYERBACK_HEIGHT 300
+#define BUTTON_WIDTH 80
 @implementation MYDetailPlayView
 
 
@@ -34,7 +36,8 @@
     self.messageButtton = [MYButton createMYButton];
       [self.messageButtton setTitle:@"私信" forState:UIControlStateNormal];
     [self.messageButtton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-
+#pragma mark -- 目前版本不需要
+    // 礼物 ()
     self.giftButton = [MYButton createMYButton];
     [self.giftButton setBackgroundImage:[UIImage imageNamed:@"voice.png"] forState:UIControlStateNormal];
     
@@ -55,12 +58,15 @@
 }
 
 - (void)layoutSubviews {
-    self.playerBackImage.frame = CGRectMake(20, 84, self.frame.size.width - 40, self.frame.size.width - 40);
-    self.praiseButton.frame = CGRectMake(0,CGRectGetMaxY(self.playerBackImage.frame) + 30  , 60, 60);
-    self.messageButtton.frame = CGRectMake(CGRectGetMaxX(self.praiseButton.frame) + 20, CGRectGetMinY(self.praiseButton.frame), 60, 60);
-    self.giftButton.frame = CGRectMake(CGRectGetMaxX(self.messageButtton.frame) + 20, CGRectGetMinY(self.praiseButton.frame), 80, 80);
-    self.playTimesButton.frame = CGRectMake(CGRectGetMaxX(self.giftButton.frame) + 20, CGRectGetMinY(self.praiseButton.frame), 60, 60);
-    self.shareTimesbuttton.frame = CGRectMake(CGRectGetMaxX(self.playTimesButton.frame) + 20, CGRectGetMinY(self.praiseButton.frame), 60, 60);
+    self.playerBackImage.frame = CGRectMake((self.width - PLAYERBACK_WIDTH) / 2 , 84, PLAYERBACK_WIDTH, PLAYERBACK_HEIGHT);
+    // 赞
+    self.praiseButton.frame = CGRectMake(self.left,self.playerBackImage.bottom + 30  , BUTTON_WIDTH, 60);
+    // 私信
+    self.messageButtton.frame = CGRectMake(self.praiseButton.right + 20, self.praiseButton.top, BUTTON_WIDTH, 60);
+    // 播放次数
+    self.playTimesButton.frame = CGRectMake(self.messageButtton.right + 20, self.praiseButton.top, BUTTON_WIDTH, 60);
+    // 转发次数
+    self.shareTimesbuttton.frame = CGRectMake(self.playTimesButton.right + 20, self.praiseButton.top, BUTTON_WIDTH, 60);
     
 }
 @end

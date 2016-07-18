@@ -7,18 +7,55 @@
 //
 
 #import "MYEditController.h"
+#import "MYPhotoController.h"
 
-@interface MYEditController ()
-
+@interface MYEditController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@property (nonatomic,strong) MYButton *photoButton;
 @end
 
 @implementation MYEditController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"修改资料";
+    
+    self.photoButton = [MYButton createMYButton];
+    self.photoButton.frame = CGRectMake((SCREEN_WIDTH - 100) / 2 , 100, 100, 100);
+    [self.photoButton setBackgroundImage:[UIImage imageNamed:@"2-02.png"] forState:UIControlStateNormal];
+    [self.view addSubview:self.photoButton];
+    
+    // 调用系统相册
+    __weak typeof(self) weakSelf = self;
+    self.photoButton.block = ^(MYButton *btn){
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
+        imagePicker.allowsEditing = YES;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        imagePicker.delegate = weakSelf;
+        [weakSelf presentViewController:imagePicker animated:YES completion:^{
+            NSLog(@"打开相册");
+        }];
+    };
+}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"取消");
+    }];
 }
 
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self.photoButton setBackgroundImage:info[UIImagePickerControllerEditedImage] forState:UIControlStateNormal];
+    MYPhotoController *photo = [[MYPhotoController alloc] init];
+    [self .navigationController pushViewController:photo animated:YES];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"选照片");
+    }];
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
