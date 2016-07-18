@@ -54,13 +54,13 @@
     [self addChildViewController:newC];
     
     MYFouceController *fouce = [[MYFouceController alloc] init];
-    fouce.title = @"全部";
+    fouce.title = @"关注";
     [self addChildViewController:fouce];
 }
 
 
 /**
- * 设置顶部的标签栏
+ * 设置顶部的标签栏®
  */
 - (void)setupTitlesView
 {
