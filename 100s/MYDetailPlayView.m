@@ -12,10 +12,6 @@
 #define BUTTON_WIDTH 80
 @implementation MYDetailPlayView
 
-
-
-
-
 - (instancetype)initWithFrame:(CGRect)frame {
    self = [super initWithFrame:frame];
   
@@ -36,7 +32,7 @@
     self.messageButtton = [MYButton createMYButton];
       [self.messageButtton setTitle:@"私信" forState:UIControlStateNormal];
     [self.messageButtton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-#pragma mark -- 目前版本不需要
+#pragma mark -- 目前版本不需要 没有设置frame
     // 礼物 ()
     self.giftButton = [MYButton createMYButton];
     [self.giftButton setBackgroundImage:[UIImage imageNamed:@"voice.png"] forState:UIControlStateNormal];
